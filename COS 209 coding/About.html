@@ -1,0 +1,170 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>About BUC</title>
+    <link rel="stylesheet" type="text/css" href="Design.css">
+    <link rel="icon" type="image/x-icon" href="Images/logo_org.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function()
+      {
+        var header=document.querySelector("header");
+        var defaultLogo=document.getElementById("defaultLogo");
+        var stickyLogo=document.getElementById("stickyLogo");
+        var textLogo=document.getElementById("textLogo");
+        var textLogo2=document.getElementById("textLogo2");
+
+        header.classList.toggle("sticky", window.scrollY>0);
+
+        if(window.scrollY>0)
+        {
+          defaultLogo.style.display = "none";
+          stickyLogo.style.display = "block";
+          textLogo.style.display = "none";
+          textLogo2.style.display = "block";
+        }
+        else
+        {
+          defaultLogo.style.display = "block";
+          stickyLogo.style.display = "none";
+          textLogo.style.display = "block";
+          textLogo2.style.display = "none";
+        }
+      });
+
+      window.addEventListener("scroll", function()
+      {
+        var reveals = document.querySelectorAll('.card');
+
+        for(var i=0; i<reveals.length; i++)
+        {
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+          if(revealtop < windowheight - revealpoint)
+          {
+            reveals[i].classList.add('active');
+          }
+          else
+          {
+            reveals[i].classList.remove('active');
+          }
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <header>
+        <a href="#" class="logo"><img src="Images/logo_blue.jpg" id="defaultLogo"></a>
+        <a href="#" class="logo"><img src="Images/logo_org.jpg" id="stickyLogo" style="display: none"></a>
+        <p id="textLogo">BRITISH UNIVERSITY COLLEGE</p>
+        <p id="textLogo2" style="display: none">BRITISH UNIVERSITY COLLEGE</p>
+        <ul>
+          <li><a href="Home.php">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="Contact.html">CONTACT</a></li>
+          <li><a href="Home.php#admission">ADMISSION</a></li>
+          <li><a href="Login.php">LOGIN</a></li>
+        </ul>
+      </header>
+    </div>
+
+    <div class="about-img">
+        <img src="Images/about.jpg" alt="About Us">
+    </div>
+
+    <div class="about-us">
+        <h4>About Us</h4>
+        <h2>British University College</h2>
+        <p>British University College is one of the Private Higher Education Institution that offers undergraduate and postgraduate programmes in Myanmar.</p>
+        <p>Our mission is to provide the best education to fulfill every student’s ambition and we make sure that quality is our top priority. Our groups of education have produced millions of outstanding students in Myanmar, Singapore, Vietnam, and China over 30 years and currently, over 6,000 students are attending their respective programme.</p>
+        <p>We are the very first education group who had installed BTEC-HND in Myanmar and supported and delivered our academic programmes in one of the famous colleges in Myanmar from 2006 to 2016.</p>
+        <p>Currently, we have our students who are attending General English & English for Academic Purposes Programme, International Foundation Programme, International Higher Diplomas, Bachelor Degree Programmes and Master Programme as well as we have our students who get to universities in UK, USA, Canada, Australia, Switzerland, and Singapore through our academic pathways.</p>
+        <p>Depending on our students’ abilities and outstanding academic records, productive curriculums in international standards and excellent teaching and guidance under experienced teachers, there are many of our students who have got scholarships for their international bachelor degree at USA and UK Universities.</p>
+    </div>
+
+    <div width="100%">
+      <div class="image-container">
+        <div class="card" id="card1">
+          <h2>Our <b>Vision</b></h2>
+          <center><img class="board-img-1" src="Images/vision.png" alt="our vision"></center>
+          To be the Top<br>Private Higher Education Institution<br> in Myanmar.
+        </div>
+
+        <div class="card" id="card2">
+          <h2>Our <b>Mission</b></h2>
+          <center><img class="board-img-2" src="Images/mission.png" alt="our mission"></center>
+          Providing the best education<br> to fulfill every student’s ambition.
+        </div>
+
+        <div class="card" id="card3">
+          <h2>Our <b>Culture</b></h2>
+          <center><img class="board-img-1" src="Images/culture.png" alt="our culture"></center>
+          An excellent Institution with<br> care & support, nurturing creativity<br> for students and staff.
+        </div>
+            
+        <div class="card" id="card4">
+          <h2>Our <b>Value</b></h2>
+          <center><img class="board-img-2" src="Images/value.png" alt="our value"></center>
+          Care & Support<br> Excellence Creativity.
+        </div>
+      </div>
+    </div>
+
+    <div class="history">
+        <div>
+            <img src="Images/history.jpg">
+        </div>
+        <div class="history-text">
+            <span>OUR HISTORY</span>
+            <p>British University College was established in Myanmar on November 2017 under the supervision of Professor Tim Boatswain who served as a pro vice chancellor of universities in the UK. This University College is one of the educational institutions under the education organization based in Singapore which was established in 1981.</p>
+            <p>The First Private University school in Myanmar to deliver BTEC HND in 2007 and doing it from 2007 to 2017 straight for 10 years. Changed to private school called British University College in 2017, and got approved by the Singapore’s government to teach the curriculum in 2019, BUC join with one of UK’s government university, the University of Sunderland, to teach Bachelor Degree.</p>
+        </div>
+    </div>
+
+    <div class="partner">
+      <div class="left-partner">
+        <p>OUR PARTNERS</p>
+        <span>We proudly collaborate with top ranked universities in the UK, Singapore and Thailand as part of our commitment to enriching the higher educational journey. These partnerships opens up doors to diverse perspectives and unique opportunities, nurturing a global learning community. We celebrate the exchange of knowledge and ideas that thrives within these collaborative networks. Together, our aim is to prepare students for success in an interconnected world.<span>
+      </div>
+      <div class="right-partner">
+        <img src="Images/partner.png" alt="Our Partners">
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-content">
+        <p>British University College</p>
+        S-25, U Chit Mg Housing, U Chit Mg Road,<br> Tamwe Tsp, Yangon<br>
+        Phone No: <a href="tel:+959426265550">+959 426 26 5550</a><br>
+        Email: <a href="mailto:buc@gmail.com">buc@gmail.com</a>
+      </div>
+
+      <div class="footer-content">
+        <p>Study Programmes</p>
+        <a href="HDIT.php">Higher Diploma in Infocomm Technology</a><br>
+        <a href="HDBusiness.php">Higher Diploma in Business</a><br>
+      </div>
+
+      <div class="footer-content">
+        <p>Life At BUC</p>
+        Facilities & Campus<br>
+        Students' Activities<br>
+        Benefits & Privilege
+      </div>
+    </div>
+
+    <div class="social">
+      <p>Contact Us:</p>
+      <a href="https://www.facebook.com/buc.edu.mm" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.instagram.com/buc_universitycollege/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+
+  </body>
+</html>

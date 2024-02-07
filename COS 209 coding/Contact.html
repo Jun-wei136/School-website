@@ -1,0 +1,133 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="Design.css">
+    <link rel="icon" type="image/x-icon" href="Images/logo_org.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function()
+      {
+        var header=document.querySelector("header");
+        var defaultLogo=document.getElementById("defaultLogo");
+        var stickyLogo=document.getElementById("stickyLogo");
+        var textLogo=document.getElementById("textLogo");
+        var textLogo2=document.getElementById("textLogo2");
+
+        header.classList.toggle("sticky", window.scrollY>0);
+
+        if(window.scrollY>0)
+        {
+          defaultLogo.style.display = "none";
+          stickyLogo.style.display = "block";
+          textLogo.style.display = "none";
+          textLogo2.style.display = "block";
+        }
+        else
+        {
+          defaultLogo.style.display = "block";
+          stickyLogo.style.display = "none";
+          textLogo.style.display = "block";
+          textLogo2.style.display = "none";
+        }
+      });
+
+      window.addEventListener("scroll", function()
+      {
+        var reveals = document.querySelectorAll('.card');
+
+        for(var i=0; i<reveals.length; i++)
+        {
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+          if(revealtop < windowheight - revealpoint)
+          {
+            reveals[i].classList.add('active');
+          }
+          else
+          {
+            reveals[i].classList.remove('active');
+          }
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <header>
+        <a href="#" class="logo"><img src="Images/logo_blue.jpg" id="defaultLogo"></a>
+        <a href="#" class="logo"><img src="Images/logo_org.jpg" id="stickyLogo" style="display: none"></a>
+        <p id="textLogo">BRITISH UNIVERSITY COLLEGE</p>
+        <p id="textLogo2" style="display: none">BRITISH UNIVERSITY COLLEGE</p>
+        <ul>
+          <li><a href="Home.php">HOME</a></li>
+          <li><a href="About.html">ABOUT</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="Home.php#admission">ADMISSION</a></li>
+          <li><a href="Login.php">LOGIN</a></li>
+        </ul>
+      </header>
+    </div>
+
+    <div class="contact">
+        <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.198336321706!2d96.16541447492119!3d16.816513983976677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ecb385037f11%3A0xa4ac4eaf23262155!2sBritish%20University%20College!5e0!3m2!1sen!2smm!4v1703688174142!5m2!1sen!2smm" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+        </div>
+        <div class="contact-text">
+            <p>Campus 1</p>
+            <span>S-25, U Chit Mg Housing, U Chit Mg Street, Tamwe Township, Yangon.</span>
+            <p>Campus 2</p>
+            <span>Pyidaungzu Yeiktha Street, Dagon Township, Yangon.</span>
+            <p>Phone</p>
+            <span><a href="tel:+959426265550">+959 426 26 5550</a>, <a href="tel:+959426265551">5551</a>, <a href="tel:+959426265552">5552</a></span>
+            <p>Student Services</p>
+            <span>
+                <a href="tel:+959426265550">+959 426 26 5553</a>, <a href="tel:+959774774599">774 774 599</a>, 
+                <a href="tel:+95943187400">431 874 00</a>, <a href="tel:+959897221277">897 221 277</a>
+            </span>
+            <p>Academic</p>
+            <span><a href="tel:+959401623592">+959 401 623 592</a></span>
+            <p>Email</p>
+            <span>
+                <a href="mailto:studentservice@buc.edu.mm">studentservice@buc.edu.mm</a><br>
+                <a href="mailto:contactus@buc.edu.mm">contactus@buc.edu.mm</a>
+            </span>
+        </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-content">
+        <p>British University College</p>
+        S-25, U Chit Mg Housing, U Chit Mg Road,<br> Tamwe Tsp, Yangon<br>
+        Phone No: <a href="tel:+959426265550">+959 426 26 5550</a><br>
+        Email: <a href="mailto:buc@gmail.com">buc@gmail.com</a>
+      </div>
+
+      <div class="footer-content">
+        <p>Study Programmes</p>
+        <a href="HDIT.php">Higher Diploma in Infocomm Technology</a><br>
+        <a href="HDBusiness.php">Higher Diploma in Business</a><br>
+      </div>
+
+      <div class="footer-content">
+        <p>Life At BUC</p>
+        Facilities & Campus<br>
+        Students' Activities<br>
+        Benefits & Privilege
+      </div>
+    </div>
+
+    <div class="social">
+      <p>Contact Us:</p>
+      <a href="https://www.facebook.com/buc.edu.mm" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.instagram.com/buc_universitycollege/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+
+  </body>
+</html>

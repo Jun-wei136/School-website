@@ -1,0 +1,127 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body 
+{
+    background-color: #02225F;
+}
+
+.container 
+{
+    padding: 16px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+table 
+{
+    width: 640px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    margin: 5px;
+}
+
+td
+{
+    padding: 15px;
+}
+
+.basic-info img
+{
+    float: left;
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+table p
+{
+    margin-top: 15px;
+}
+
+th
+{
+    padding: 15px;
+    font-size: large;
+    color: #02225F;
+}
+
+.nrc-td
+{
+    width: 400px;
+    height: 180px;
+}
+
+.nrc-td img
+{
+    width: 100%;
+}
+
+.dip-td img
+{
+    width: 100%;
+}
+
+.result-form 
+{
+    margin: 5px;
+    width: 820px;
+}
+
+.result-form p
+{
+    text-align: justify;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.result 
+{
+    padding: 50px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.result img
+{
+    margin-bottom: 50px;
+}
+
+.result-title 
+{
+    color: #02225F;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.buttons
+{
+    background-color: #02225F;
+    border-radius: 8px;
+    outline: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    padding: 16px;
+}
+
+.buttons:hover 
+{
+    background-color: #15388f;
+    transition: 0.5s;
+}
